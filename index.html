@@ -1,1 +1,103 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Next Level Gaming and Esports Arena demo website"><title>Next Level Gaming | Esports Arena</title><link rel="stylesheet" href="style.css"></head><body><header><a class="logo" href="#home">🎮 NLG <span>ARENA</span></a><button id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav id="nav"><a href="#home">Home</a><a href="#about">About</a><a href="#packages">Packages</a><a href="#experiences">Experiences</a><a href="#booking">Calculate Fees</a><a href="#contact">Contact</a></nav></header><main><section id="home" class="hero"><div class="tag">NEXT LEVEL GAMING & ESPORTS ARENA</div><h1>YOUR GAME.<br><em>YOUR ARENA.</em></h1><p>Explore gaming experiences, compare packages and estimate your next visit.</p><a class="btn" href="#booking">Plan your visit →</a></section><section id="about"><h2>About the arena</h2><p>Next Level Gaming and Esports Arena is a Johannesburg-based gaming and entertainment concept described in the student's 2026 project proposal. The proposed website serves gamers, families, schools, birthday groups and work teams.</p><p class="muted">This is a student demonstration website, not an official business booking service.</p></section><section id="packages"><h2>Gaming packages</h2><div class="grid" id="packageCards"></div></section><section id="experiences"><h2>Single experiences</h2><div class="grid" id="experienceCards"></div></section><section id="booking"><h2>Calculate fees</h2><p>Select one or more experiences. Discounts are based on the number of selected bookings: 2 = 5%, 3 = 10%, 4+ = 15%.</p><div class="panel"><div id="options"></div><div class="total"><p>Subtotal <strong id="subtotal">R0.00</strong></p><p>Discount <strong id="discount">R0.00</strong></p><p class="grand">Estimated total <strong id="total">R0.00</strong></p></div><button class="btn" id="confirm">Confirm demo selection</button><p id="feedback" role="status"></p></div></section><section id="contact"><h2>Contact us</h2><p>Have a question? Use the demonstration contact form below.</p><form id="contactForm"><label>Name<input id="name" required maxlength="80"></label><label>Email<input id="email" type="email" required></label><label>Message<textarea id="message" required maxlength="1000"></textarea></label><button class="btn">Validate message</button><p id="formFeedback" role="status"></p></form><p class="muted">This form validates input locally; it does not send a message or collect data.</p></section></main><footer>© 2026 NLG Arena | Student demonstration by Brian Mupataie • ST10526359</footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore gaming packages, esports experiences, fee estimates and enquiries for the Next Level Gaming and Esports Arena student project.">
+  <meta name="keywords" content="gaming arena, esports, Johannesburg, virtual reality, racing simulator, gaming packages">
+  <meta name="author" content="Brian Mupataie">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://st10526359.github.io/Next-Level-Gaming-Esports-Arena/">
+  <meta property="og:title" content="Next Level Gaming | Esports Arena">
+  <meta property="og:description" content="Student website project for a Johannesburg gaming and esports arena concept.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://st10526359.github.io/Next-Level-Gaming-Esports-Arena/">
+  <title>Next Level Gaming | Esports Arena</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html" aria-label="Next Level Gaming home">🎮 NLG <span>ARENA</span></a>
+  <button id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav id="nav" aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#activities">Activities</a>
+    <a href="#booking">Calculate Fees</a>
+    <a href="enquiry.html">Enquiry</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+  <section id="home" class="hero">
+    <div class="tag">NEXT LEVEL GAMING & ESPORTS ARENA</div>
+    <h1>YOUR GAME.<br><em>YOUR ARENA.</em></h1>
+    <p>Explore gaming experiences, compare packages and estimate the cost of your next visit.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#booking">Plan your visit →</a>
+      <a class="btn secondary" href="enquiry.html">Send an enquiry</a>
+    </div>
+  </section>
+  <section id="about">
+    <h2>About the arena</h2>
+    <p>Next Level Gaming and Esports Arena is a Johannesburg-based gaming and entertainment concept developed for this student project. The proposed service is aimed at gamers, families, schools, birthday groups and work teams.</p>
+    <p class="muted">Student demonstration website. It is not an official business booking or payment service.</p>
+    <div class="stats" aria-label="Project highlights">
+      <article><strong>7</strong><span>Activities</span></article>
+      <article><strong>4</strong><span>Package options</span></article>
+      <article><strong>15%</strong><span>Maximum demo discount</span></article>
+    </div>
+  </section>
+  <section id="activities">
+    <h2>Gaming packages & experiences</h2>
+    <p>Use the search and category controls to filter the dynamically loaded activity list.</p>
+    <div class="toolbar" aria-label="Activity filters">
+      <label for="searchActivities">Search activities</label>
+      <input id="searchActivities" type="search" placeholder="Search by name or description">
+      <div class="tabs" role="tablist" aria-label="Activity categories">
+        <button class="tab active" data-type="all" role="tab" aria-selected="true">All</button>
+        <button class="tab" data-type="package" role="tab" aria-selected="false">Packages</button>
+        <button class="tab" data-type="experience" role="tab" aria-selected="false">Experiences</button>
+      </div>
+    </div>
+    <p id="contentStatus" class="muted" role="status">Loading activities…</p>
+    <div class="grid" id="activityCards"></div>
+  </section>
+  <section id="booking">
+    <h2>Calculate fees</h2>
+    <p>Select one or more activities. Demo discounts: 2 bookings = 5%, 3 = 10%, 4 or more = 15%.</p>
+    <div class="panel">
+      <div id="options" aria-label="Activity selection"></div>
+      <div class="total" aria-live="polite">
+        <p>Subtotal <strong id="subtotal">R0.00</strong></p>
+        <p>Discount <strong id="discount">R0.00 (0%)</strong></p>
+        <p class="grand">Estimated total <strong id="total">R0.00</strong></p>
+      </div>
+      <button class="btn" id="confirm" type="button">Confirm demo selection</button>
+      <p id="feedback" role="status"></p>
+    </div>
+  </section>
+  <section id="gallery">
+    <h2>Gaming gallery</h2>
+    <p>Select an image to open the JavaScript lightbox.</p>
+    <div class="gallery-grid">
+      <button class="gallery-item" data-full="images/esports.svg" aria-label="Open esports arena illustration"><img src="images/esports.svg" alt="Illustration of an esports gaming arena with screens and controllers"></button>
+      <button class="gallery-item" data-full="images/vr.svg" aria-label="Open virtual reality illustration"><img src="images/vr.svg" alt="Illustration representing a virtual reality gaming experience"></button>
+      <button class="gallery-item" data-full="images/racing.svg" aria-label="Open racing simulator illustration"><img src="images/racing.svg" alt="Illustration of a racing simulator setup"></button>
+    </div>
+  </section>
+  <section id="faq">
+    <h2>Frequently asked questions</h2>
+    <div class="accordion">
+      <article><button class="accordion-trigger" aria-expanded="false">Are the prices official?</button><div class="accordion-panel" hidden><p>Only the R1 500 Ultimate Gamer Pass price came from the original project proposal. Other prices are illustrative student-demo values.</p></div></article>
+      <article><button class="accordion-trigger" aria-expanded="false">Does this site make real bookings?</button><div class="accordion-panel" hidden><p>No. The calculator, enquiry and contact forms demonstrate front-end functionality only.</p></div></article>
+      <article><button class="accordion-trigger" aria-expanded="false">Does the site work on phones?</button><div class="accordion-panel" hidden><p>Yes. The layout, navigation, cards and forms use responsive CSS for smaller screens.</p></div></article>
+    </div>
+  </section>
+</main>
+<footer><p>© 2026 NLG Arena | Student demonstration by Brian Mupataie • ST10526359</p><p><a href="enquiry.html">Enquiry</a> · <a href="contact.html">Contact</a></p></footer>
+<dialog id="detailModal" class="modal"><button class="modal-close" type="button" aria-label="Close details">×</button><h2 id="modalTitle">Activity details</h2><p id="modalDescription"></p><p><strong id="modalPrice"></strong></p></dialog>
+<div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image lightbox"><button id="lightboxClose" type="button" aria-label="Close image">×</button><img id="lightboxImage" src="" alt=""></div>
+<script src="script.js"></script>
+</body>
+</html>

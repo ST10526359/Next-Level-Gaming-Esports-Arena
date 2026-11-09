@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://st10526359.github.io/Next-Level-Gaming-Esports-Arena/sitemap.xml
