@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Ultimate Gamer Pass",
+    "price": 1500,
+    "type": "package",
+    "desc": "Full-day gaming access from the original Phase 1 proposal."
+  },
+  {
+    "name": "VIP Gaming Experience",
+    "price": 1200,
+    "type": "package",
+    "desc": "Illustrative VIP gaming package for this student demo."
+  },
+  {
+    "name": "Esports Training Package",
+    "price": 850,
+    "type": "package",
+    "desc": "Illustrative coaching and esports practice session."
+  },
+  {
+    "name": "Birthday Party Package",
+    "price": 2000,
+    "type": "package",
+    "desc": "Illustrative group celebration package."
+  },
+  {
+    "name": "Virtual Reality Experience",
+    "price": 350,
+    "type": "experience",
+    "desc": "Illustrative virtual reality session."
+  },
+  {
+    "name": "Racing Simulator Challenge",
+    "price": 250,
+    "type": "experience",
+    "desc": "Illustrative racing simulator experience."
+  },
+  {
+    "name": "Escape Room Challenge",
+    "price": 300,
+    "type": "experience",
+    "desc": "Illustrative escape-room challenge."
+  }
+]
